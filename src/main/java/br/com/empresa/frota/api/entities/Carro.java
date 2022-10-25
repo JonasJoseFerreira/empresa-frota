@@ -1,9 +1,13 @@
 package br.com.empresa.frota.api.entities;
 
 import java.util.Date;
-
+@En
 public class Carro {
 private Long id;
+private String modelo;
+private String marca;
+private Date dataFabricacao;
+
 public Long getId() {
 	return id;
 }
@@ -27,9 +31,5 @@ public Date getDataFabricacao() {
 }
 public void setDataFabricacao(Date dataFabricacao) {
 	this.dataFabricacao = dataFabricacao;
-}
-private String modelo;
-private String marca;
-private Date dataFabricacao;
 
 }
